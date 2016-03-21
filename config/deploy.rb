@@ -2,7 +2,8 @@
 lock '3.4.0'
 
 set :application, "adserverapp"
-set :repo_url, "git@github.com/tester/test-application.git"
+set :repo_url, "git@github.com:matejtest/adserver.git"
+set :deploy_to, "/home/jenkins/deploy"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -11,13 +12,13 @@ set :repo_url, "git@github.com/tester/test-application.git"
 # set :deploy_to, '/var/www/my_app_name'
 
 # Default value for :scm is :git
-# set :scm, :git
+set :scm, :git
 
 # Default value for :format is :pretty
 # set :format, :pretty
 
 # Default value for :log_level is :debug
-# set :log_level, :debug
+set :log_level, :debug
 
 # Default value for :pty is false
 # set :pty, true

@@ -1,5 +1,5 @@
 
-server "localhost", :user => "matejci", :roles => %{web app}
+server "localhost", :user => "jenkins", :roles => %{web app}
 set :branch, "master"
 
 # server-based syntax
