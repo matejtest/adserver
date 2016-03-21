@@ -1,0 +1,39 @@
+[ 2016-03-21 20:08:40.7312 25570/7f461d0bb780 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-03-21 20:08:40.7362 25573/7f046285d780 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-03-21 20:08:40.7366 25573/7f046285d780 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-03-21 20:08:40.7390 25573/7f046285d780 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 25573
+[ 2016-03-21 20:08:40.7470 25582/7feb9709d780 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-03-21 20:08:40.7479 25582/7feb9709d780 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 25582
+App 25624 stdout: 
+App 25641 stdout: 
+App 25624 stderr: WARN: tilt autoloading 'tilt/erb' in a non thread-safe way; explicit require 'tilt/erb' suggested.
+App 25624 stderr: 127.0.0.1 - - [21/Mar/2016:20:08:43 +0100] "HEAD / HTTP/1.1" 200 518 0.0028
+App 25624 stderr: 127.0.0.1 - - [21/Mar/2016:20:08:55 +0100] "GET / HTTP/1.1" 200 518 0.0120
+App 25624 stderr: 127.0.0.1 - - [21/Mar/2016:20:08:55 +0100] "GET /favicon.ico HTTP/1.1" 404 473 0.0008
+App 25624 stderr: 127.0.0.1 - - [21/Mar/2016:20:08:55 +0100] "GET /favicon.ico HTTP/1.1" 404 473 0.0005
+App 25624 stderr: 127.0.0.1 - - [21/Mar/2016:20:09:00 +0100] "GET /list HTTP/1.1" 401 22 0.0016
+App 25624 stderr: 127.0.0.1 - test [21/Mar/2016:20:09:03 +0100] "GET /list HTTP/1.1" 200 887 0.0102
+App 25624 stderr: 127.0.0.1 - test [21/Mar/2016:20:09:06 +0100] "GET /show/6 HTTP/1.1" 200 873 0.0095
+
+[ 2016-03-21 20:11:52.0018 25573/7f046081b700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-03-21 20:11:52.0019 25573/7f046285d780 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-03-21 20:11:52.0019 25573/7f046285d780 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 25641, application /home/matejci/Code/SinatraApps/adserver/public (development)
+
+[ 2016-03-21 20:11:52.0022 25582/7feb9523a700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-03-21 20:11:52.0023 25573/7f0453f7e700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2016-03-21 20:11:52.0023 25582/7feb9709d780 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-03-21 20:11:52.0023 25573/7f0453f7e700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2016-03-21 20:11:52.0024 25582/7feb94a39700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-03-21 20:11:52.0024 25582/7feb94a39700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-03-21 20:11:52.0024 25573/7f0452e7a700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2016-03-21 20:11:52.0024 25573/7f0452e7a700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2016-03-21 20:11:52.0025 25573/7f04536fc700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2016-03-21 20:11:52.0025 25573/7f04536fc700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2016-03-21 20:11:52.0028 25573/7f046081b700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-03-21 20:11:52.0029 25573/7f046081b700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2016-03-21 20:11:52.0030 25582/7feb9523a700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-03-21 20:11:52.0030 25573/7f04525f8700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-03-21 20:11:52.0030 25573/7f04525f8700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-03-21 20:11:52.0032 25573/7f046285d780 age/Cor/CoreMain.cpp:819 ]: Checking whether to disconnect long-running connections for process 25641, application /home/matejci/Code/SinatraApps/adserver/public (development)
+[ 2016-03-21 20:11:52.0034 25582/7feb9709d780 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-03-21 20:11:52.2164 25573/7f046285d780 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
